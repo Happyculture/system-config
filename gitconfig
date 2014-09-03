@@ -3,14 +3,18 @@
   status = auto
   branch = auto
   interactive = auto
+  ui = true
 [core]
   editor = vim
+# For windows users
+# fileMode = false # ignore file mode (chmod)
+# autocrlf = true # handle CR and LF
 [alias]
   up = pull --rebase
   st = status
-  ci = commit
-  co = checkout
-  br = branch
   sl = log --graph --pretty=oneline --abbrev-commit --decorate
 [branch]
-	autosetuprebase = always
+# Some of us want to explicitly ask for rebase
+#	autosetuprebase = always
+[diff]
+  algorithm = patience
