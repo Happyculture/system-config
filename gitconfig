@@ -1,0 +1,16 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[core]
+  editor = vim
+[alias]
+  up = pull --rebase
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  sl = log --graph --pretty=oneline --abbrev-commit --decorate
+[branch]
+	autosetuprebase = always
